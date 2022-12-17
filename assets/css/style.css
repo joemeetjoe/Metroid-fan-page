@@ -3,18 +3,20 @@
 }
 
 body {
-    background-color: grey;
+    background-color: whitesmoke;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
     box-shadow: 10px 10px 20px;
     height: 100%;
-    justify-content: space-between;
     align-items: center; 
     background-color: rgb(37, 34, 34);
     padding: 1rem;
     flex-wrap: wrap;
+    border-radius: 0px 0px 5px 0px;
+
 }
 
 h1 {
@@ -52,13 +54,118 @@ header nav li a {
     background-size: cover;
     background-position: center;
     height: 200px;
+    padding: 20px;
+    box-shadow: box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+
+div {
+    display: flex;
+    align-items: flex-end;
+
 }
 
 h2{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: powderblue;
     height: 30%;
+    padding: 1 rem;
+    color: rgb(37, 34, 34);
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 2px;
+}
+
+main{
+    padding: 3%;
+}
+
+main section {
     
+    display: flex;
+    justify-content: space-between;
 
 }
+
+h3 {
+
+    font-size: 50px;
+    width: 60%;
+    flex-direction: column;
+    text-shadow: 0px 0px 3px black;
+    color: powderblue;
+    border-right: solid;
+    
+}
+main section div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section p {
+    padding-left: 10%;
+    padding-top: 2%;
+    weight: bolder;
+    text-shadow: 0px 0px 1px black;
+    color: rgb(37, 34, 34);
+}
+
+article {
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center; 
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+h9 {
+
+    font-size: 50px;
+    width: 18%;
+    flex-direction: column;
+    color: powderblue;
+    border-right: solid;
+    text-shadow: 0px 0px 3px black;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.footer-list li{
+    color: rgb(37, 34, 34);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-shadow: 0px 0px 2px black;
+    font-weight: 600;
+    padding-right: 1rem;
+    
+}
+
+

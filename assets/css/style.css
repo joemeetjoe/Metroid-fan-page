@@ -56,7 +56,8 @@ header nav li a {
     height: 200px;
     padding: 20px;
     box-shadow: box-shadow: 0px 0px 10px black;
-    border-radius: 0px 0px 5px 5px;
+    border-bottom: solid;
+    border-top: solid;
     
 }
 
@@ -92,7 +93,8 @@ main section {
 h3 {
 
     font-size: 50px;
-    width: 60%;
+    min-width: 200px;
+    max-width: 200px;
     flex-direction: column;
     text-shadow: 0px 0px 3px black;
     color: powderblue;
@@ -105,7 +107,7 @@ main section div {
 }
 
 main section p {
-    padding-left: 10%;
+    padding-left: 3%;
     padding-top: 2%;
     weight: bolder;
     text-shadow: 0px 0px 1px black;
@@ -114,7 +116,126 @@ main section p {
 
 article {
     padding: 3%;
+    display: flex;
+    justify-content: space-between;
 }
+
+article h4 {
+    font-size: 50px;
+    width: 60%;
+    flex-direction: column;
+    text-shadow: 0px 0px 3px black;
+    color: powderblue;
+    border-right: solid;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+#grid-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+
+}
+
+.grid-layout {
+    width: 45%;
+    height: 150px;
+    margin:20px;
+    margin-left: 50px;
+    border-style: solid;
+    box-shadow: 20px;
+    
+    
+
+}
+
+#history-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 15px 15px 0px;
+    background-image: url(/assets/images/metroid-dread.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    width: 100%;
+    height: 500px;
+    margin-left: 0px 0px 30px 50px;
+    margin-bottom: 30px;
+}
+
+#metroid-dread {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 15px 15px 0px;
+    background-image: url(/assets/images/samus-dread.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 3px;
+}
+
+#speedrunning {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 15px 15px 0px;
+    background-image: url(/assets/images/Samus-with-rogues.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
+}
+
+#representation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 15px 15px 0px;
+    background-image: url(/assets/images/Samus-with-ship.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 25% ;
+}
+
+#legacy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 15px 15px 0px;
+    background-image: url(/assets/images/super-metroid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 75% ;
+}
+
+.overcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: fit-content;
+    background-color: powderblue;
+    padding: 5px 5px 5px 20px;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 10px black;
+   
+
+
+}
+
+
+
+
+
 
 
 
@@ -137,14 +258,15 @@ footer {
     justify-content: space-between;
     height: 100%;
     align-items: center; 
-    padding: 1rem;
+    padding: 3%;
     flex-wrap: wrap;
 }
 
 h9 {
 
     font-size: 50px;
-    width: 18%;
+    min-width: 200px;
+    max-width: 200px;
     flex-direction: column;
     color: powderblue;
     border-right: solid;

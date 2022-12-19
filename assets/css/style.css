@@ -16,6 +16,7 @@ header {
     padding: 1rem;
     flex-wrap: wrap;
     border-radius: 0px 0px 5px 0px;
+    border-bottom: solid;
 
 }
 
@@ -41,6 +42,7 @@ header nav li a {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
     text-shadow: 0px 0px 5px black;
     font-weight: 600;
 }
@@ -48,31 +50,27 @@ header nav li a {
 .banner {
     display: flex;
     justify-content: flex-end;
-    align-content: flex-end;
-    background-image: url(/assets/images/samus_water_fanart.jpg);
+    background-image: url(../images/samus_water_fanart.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
     height: 200px;
     padding: 20px;
-    box-shadow: box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 2px black;
     border-bottom: solid;
-    border-top: solid;
-    
 }
 
 div {
     display: flex;
     align-items: flex-end;
-
 }
 
 h2{
-    display: flex;
     align-items: center;
     background-color: powderblue;
     height: 30%;
-    padding: 1 rem;
+    width: 300px;
+    padding: 1rem 0rem  1rem 1rem;
     color: rgb(37, 34, 34);
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px 0px 10px black;
@@ -90,8 +88,7 @@ main section {
 
 }
 
-h3 {
-
+h3, h9, h4 {
     font-size: 50px;
     min-width: 200px;
     max-width: 200px;
@@ -99,8 +96,11 @@ h3 {
     text-shadow: 0px 0px 3px black;
     color: powderblue;
     border-right: solid;
-    
+    border-color: rgb(37, 34, 34);
 }
+
+
+
 main section div {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ main section div {
 main section p {
     padding-left: 3%;
     padding-top: 2%;
-    weight: bolder;
+    font-weight: bolder;
     text-shadow: 0px 0px 1px black;
     color: rgb(37, 34, 34);
 }
@@ -120,26 +120,11 @@ article {
     justify-content: space-between;
 }
 
-article h4 {
-    font-size: 50px;
-    width: 60%;
-    flex-direction: column;
-    text-shadow: 0px 0px 3px black;
-    color: powderblue;
-    border-right: solid;
-    min-width: 200px;
-    max-width: 200px;
-}
-
 #grid-section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    
-    
-    
-
 }
 
 .grid-layout {
@@ -148,72 +133,59 @@ article h4 {
     margin:20px;
     margin-left: 50px;
     border-style: solid;
-    box-shadow: 20px;
-    
-    
-
+    border-width: thick;
+    opacity: .5;
 }
 
-#history-section {
+.photo-link {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 15px 15px 15px 0px;
-    background-image: url(/assets/images/metroid-dread.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+#metroid-dread, #speedrunning, #representation, #legacy, #history-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 3px;
+}
+
+#history-section {
+    background-image: url(../images/metroid-dread.jpg);
     background-position-x: center;
     background-position-y: 60%;
     width: 100%;
     height: 500px;
     margin-left: 0px 0px 30px 50px;
     margin-bottom: 30px;
+    
 }
 
 #metroid-dread {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px 15px 15px 0px;
-    background-image: url(/assets/images/samus-dread.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/samus-dread.jpg);
     background-position: top;
     border-radius: 3px;
 }
 
 #speedrunning {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px 15px 15px 0px;
-    background-image: url(/assets/images/Samus-with-rogues.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/Samus-with-rogues.webp);
     background-position-x: center;
     background-position-y: 35%;
 }
 
 #representation {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px 15px 15px 0px;
-    background-image: url(/assets/images/Samus-with-ship.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/Samus-with-ship.jpg);
     background-position-x: center;
     background-position-y: 25% ;
 }
 
 #legacy {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px 15px 15px 0px;
-    background-image: url(/assets/images/super-metroid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/super-metroid.jpg);
     background-position-x: center;
     background-position-y: 75% ;
 }
@@ -227,31 +199,13 @@ article h4 {
     padding: 5px 5px 5px 20px;
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px 0px 10px black;
-   
-
-
+    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.overcard h5{
+    font-size: 30px;
+    text-decoration: none;
+}
 
 footer {
     display: flex;
@@ -262,32 +216,26 @@ footer {
     flex-wrap: wrap;
 }
 
-h9 {
-
-    font-size: 50px;
-    min-width: 200px;
-    max-width: 200px;
-    flex-direction: column;
-    color: powderblue;
-    border-right: solid;
-    text-shadow: 0px 0px 3px black;
-}
-
 .footer-list {
     display: flex;
     justify-content: space-around;
     width: 75%;
+    margin-right: 90px;
 }
 
 .footer-list li{
     color: rgb(37, 34, 34);
+    font-size: 20px;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 5px;
     text-shadow: 0px 0px 2px black;
     font-weight: 600;
     padding-right: 1rem;
-    
 }
 
+.grid-layout:hover {
+    opacity: 1;
+}
 

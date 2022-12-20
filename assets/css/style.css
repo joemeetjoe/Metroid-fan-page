@@ -4,6 +4,7 @@
 
 body {
     background-color: whitesmoke;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,10 +32,11 @@ h1 {
 }
 nav ul {
     display: flex;
+    padding-left: 1rem;
 }
 
 nav ul li {
-    padding-right: 1rem;
+    padding: 1rem 1rem 0 0;
 }
 
 header nav li a {
@@ -82,28 +84,27 @@ main{
 }
 
 main section {
-    
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
-h3, h9, h4 {
+h3 {
+    flex: 0 0 200px;
     font-size: 50px;
-    min-width: 200px;
-    max-width: 200px;
-    flex-direction: column;
     text-shadow: 0px 0px 3px black;
     color: powderblue;
     border-right: solid;
     border-color: rgb(37, 34, 34);
+
 }
 
-
-
-main section div {
+.content {
     display: flex;
     flex-direction: column;
+    flex: 1 0 500px;
+
 }
 
 main section p {
@@ -112,9 +113,11 @@ main section p {
     font-weight: bolder;
     text-shadow: 0px 0px 1px black;
     color: rgb(37, 34, 34);
+    
 }
 
 article {
+    display: flex;
     padding: 3%;
     display: flex;
     justify-content: space-between;
@@ -128,12 +131,10 @@ article {
 }
 
 .grid-layout {
-    width: 45%;
+    width: 50%;
     height: 150px;
-    margin:20px;
-    margin-left: 50px;
-    border-style: solid;
-    border-width: thick;
+    padding:20px;
+    padding-left: 50px;
     opacity: .5;
 }
 
@@ -144,6 +145,9 @@ article {
     padding: 15px 15px 15px 0px;
     width: 100%;
     height: 100%;
+    border-width: thick;
+    border-style: solid;
+    border-color: black;
 }
 
 #metroid-dread, #speedrunning, #representation, #legacy, #history-section {
@@ -155,12 +159,15 @@ article {
     border-radius: 3px;
 }
 
+.grid-layout:first-child{
+    height: 500px;
+    width: 100%;
+}
+
 #history-section {
     background-image: url(../images/metroid-dread.jpg);
     background-position-x: center;
     background-position-y: 60%;
-    width: 100%;
-    height: 500px;
     margin-left: 0px 0px 30px 50px;
     margin-bottom: 30px;
     
@@ -216,14 +223,14 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-list {
+#footer-list {
     display: flex;
     justify-content: space-around;
     width: 75%;
     margin-right: 90px;
 }
 
-.footer-list li{
+#footer-list li{
     color: rgb(37, 34, 34);
     font-size: 20px;
     text-decoration-line: underline;
@@ -239,3 +246,73 @@ footer {
     opacity: 1;
 }
 
+@media (max-width: 992px) {
+    .grid-layout{
+        width: 100%;
+    }
+
+}
+
+@media ( max-width: 768px) {
+    header {
+        justify-content: center ;
+        align-items: center; 
+        padding: 1rem;
+        width: 100%;
+        
+    
+    }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        line-height: 30px;
+    }
+    
+    main section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h3 {
+        flex: 0 0 50px;
+        border-right: none;
+        border-bottom: solid;
+        border-color: rgb(37, 34, 34);
+        
+    }
+
+    .content {
+        flex: 0 0 200px;
+    }
+    
+    article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    #footer-list{
+        line-height: 30px;
+    }
+}
+
+  
+    
+    

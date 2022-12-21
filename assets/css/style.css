@@ -1,26 +1,33 @@
+
+
+/* universal selector setting all fonts to arial */
 * {
     font-family: Arial;
 }
 
+/* setting the entire page's backround to whitesmoke and setting the overflow x setting to hidden to prevent small phones from scrolling left or right */
 body {
     background-color: whitesmoke;
     overflow-x: hidden;
 }
 
+
+/* making the header into a flex box and applying styling to it. Setting contents inside to wrap and space between */
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 10px 10px 20px;
     height: 100%;
     align-items: center; 
     background-color: rgb(37, 34, 34);
     padding: 1rem;
-    flex-wrap: wrap;
     border-radius: 0px 0px 5px 0px;
     border-bottom: solid;
 
 }
 
+/* adding styling to the h1 header */
 h1 {
     font-size: 50px;
     background-color: powderblue;
@@ -30,15 +37,20 @@ h1 {
     padding: 5px;
     text-shadow: 0px 0px 1px black;
 }
+
+/*setting the ul inside header to display flex to get things to display inline and spacing
+it to where it doesnt run into the header when shrunk */
 nav ul {
     display: flex;
     padding-left: 1rem;
 }
 
+/* spacing the list in the navbar out */
 nav ul li {
     padding: 1rem 1rem 0 0;
 }
 
+/* adding styilng to the text in the nav list */
 header nav li a {
     color: powderblue;
     text-decoration-line: underline;
@@ -49,6 +61,8 @@ header nav li a {
     font-weight: 600;
 }
 
+/* making the banner box into a flex box, adding an image, styling that image,
+and styling the banner  */
 .banner {
     display: flex;
     justify-content: flex-end;
@@ -62,11 +76,13 @@ header nav li a {
     border-bottom: solid;
 }
 
-div {
+/* targetting the box containing the h2 and pushing it down to the bottom  of the banner */
+ .banner div {
     display: flex;
     align-items: flex-end;
 }
 
+/* styling the h2 header */
 h2{
     align-items: center;
     background-color: powderblue;
@@ -79,27 +95,30 @@ h2{
     border-radius: 2px;
 }
 
+/* padding the main section to push it away from other sections */
 main{
     padding: 3%;
 }
 
+/* setting the main section to flexbox, wrapping content and pushing it away from each other */
 main section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
+/* setting the h3 headers to flex shrink/grow none, but setting a min basis, adding styling */
 h3 {
     flex: 0 0 200px;
     font-size: 50px;
     text-shadow: 0px 0px 3px black;
-    color: powderblue;
+    color: rgb(37, 34, 34);
     border-right: solid;
     border-color: rgb(37, 34, 34);
 
 }
 
+/* setting all the content to the right of the h3's to flex strink and adding a basis */
 .content {
     display: flex;
     flex-direction: column;
@@ -107,22 +126,23 @@ h3 {
 
 }
 
+/* adding some padding as well as font styling for the paragraph */
 main section p {
     padding-left: 3%;
     padding-top: 2%;
     font-weight: bolder;
     text-shadow: 0px 0px 1px black;
     color: rgb(37, 34, 34);
-    
 }
 
+/* making the article box into a flexbox and pushing the h3 and content div away from each other*/
 article {
     display: flex;
     padding: 3%;
-    display: flex;
     justify-content: space-between;
 }
 
+/* making the grid section containing all of the grid layout sections into flex items and wrapping them. setting with and height to 100% */
 #grid-section {
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +150,7 @@ article {
     height: 100%;
 }
 
+/* setting the basic stylings of the grid sections */
 .grid-layout {
     width: 50%;
     height: 150px;
@@ -138,6 +159,7 @@ article {
     opacity: .5;
 }
 
+/* adding flex properties to the a tags inside of the grid sections */
 .photo-link {
     display: flex;
     flex-direction: column;
@@ -150,6 +172,8 @@ article {
     border-color: black;
 }
 
+
+/* making the boxes containing the backround photos into flex boxes and setting properties of the backround photos */
 #metroid-dread, #speedrunning, #representation, #legacy, #history-section {
     display: flex;
     flex-direction: column;
@@ -159,11 +183,13 @@ article {
     border-radius: 3px;
 }
 
+/* targetting the grid layout section that holds the history section a tag and setting some dimensions */
 .grid-layout:first-child{
     height: 500px;
     width: 100%;
 }
 
+/* placing a backround image in the a tag of history section and setting the dimensions */
 #history-section {
     background-image: url(../images/metroid-dread.jpg);
     background-position-x: center;
@@ -173,6 +199,7 @@ article {
     
 }
 
+/* doing the same as history section for the next 4 sections */
 #metroid-dread {
     background-image: url(../images/samus-dread.jpg);
     background-position: top;
@@ -197,6 +224,7 @@ article {
     background-position-y: 75% ;
 }
 
+/* setting the flexbox properties for the text boxes that overlay the links section */
 .overcard {
     display: flex;
     flex-direction: column;
@@ -206,14 +234,15 @@ article {
     padding: 5px 5px 5px 20px;
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px 0px 10px black;
-    
 }
 
+/* setting the text size for  */
 .overcard h5{
     font-size: 30px;
     text-decoration: none;
 }
 
+/* setting flex properties for the footer and the basic dimensions of */
 footer {
     display: flex;
     justify-content: space-between;
@@ -223,14 +252,17 @@ footer {
     flex-wrap: wrap;
 }
 
+/* setting flex properties for the footer list */
 #footer-list {
     display: flex;
     justify-content: space-around;
     width: 75%;
-    margin-right: 90px;
+    margin-right: 40px;
 }
 
-#footer-list li{
+
+/* adding some text decoration for the footer list nav bar */
+#footer-list  li{
     color: rgb(37, 34, 34);
     font-size: 20px;
     text-decoration-line: underline;
@@ -242,10 +274,12 @@ footer {
     padding-right: 1rem;
 }
 
+/* adding a hover feature to the grid layout using a psuedo class */
 .grid-layout:hover {
     opacity: 1;
 }
 
+/* using media queries at common pixel widths to make the boxes stack on top of each other and center */
 @media (max-width: 992px) {
     .grid-layout{
         width: 100%;
@@ -259,8 +293,6 @@ footer {
         align-items: center; 
         padding: 1rem;
         width: 100%;
-        
-    
     }
 
     .nav-list {
@@ -284,7 +316,6 @@ footer {
         border-right: none;
         border-bottom: solid;
         border-color: rgb(37, 34, 34);
-        
     }
 
     .content {
@@ -301,17 +332,29 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .content {
         margin-top: 20px;
     }
 
-    #footer-list{
+    #footer-list li {
         line-height: 30px;
     }
 }
+
+@media (max-width:530px){
+    footer{
+        align-items: center;
+    }
+
+    #footer-list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
   
     

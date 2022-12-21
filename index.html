@@ -1,5 +1,7 @@
+<!-- metadata telling the browser what type of page it is opening -->
 <!DOCTYPE html>
 
+<!-- metatadat telling the browser what charset, title, viewport size, and css files to reference -->
 <head>
     <meta charset="UTF-8"/>
     <title> Metroid Fan Site </title>
@@ -8,7 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
+
 <body>
+    <!-- header section containing the logo and the nav list, these were put into a few different tags to manipulate the position of boxes.  -->
     <header> 
         <h1>Metroid</h1>
         <nav>
@@ -21,12 +25,14 @@
         </nav>
     </header>
 
+<!-- banner section containing fullscreen photo and secondary splash header -->
     <section class = "banner">
         <div>
             <h2>The mother of all Metroidvanias</h2>
         </div>
     </section>
 
+<!-- main section containing h3 aside along with two paragraphs about metroid, i put the paragraphs in a div called content to better manipulate it along with other divs of the same name called content -->
     <main>
         <section>
             <h3 id = "about-metroid-header">About Metroid</h3>
@@ -41,11 +47,13 @@
         </section>
     </main>
 
+<!-- article section containing an h3 aside called links and the div class content. This div class contains several different sections with links to different sites.
+I put an invisible box over the sections "grid-layouts" to make them into clickable links. There is a small "overcard" div to contain the headers and small descriptions  -->
     <article>
         <h3 id = "links-header">Links</h3>
         <div class = "content">
             <div id="grid-section">
-                <section  class="grid-layout">
+                <section class="grid-layout">
                     <a id = "history-section" class = "photo-link" href = "https://en.wikipedia.org/wiki/Metroid">
                     <div class = "overcard">
                         <h5 id="History">History</h5>
@@ -55,7 +63,7 @@
                     </a>
                 </section>
 
-                <section  class = "grid-layout">
+                <section class = "grid-layout">
                     <a id="metroid-dread" class = "photo-link" href = "https://www.youtube.com/watch?v=XsN0avdHf4I">
                     <div class = "overcard">
                         <h5>Metroid Dread</h5>
@@ -65,7 +73,7 @@
                     </a>
                 </section>
 
-                <section  class = "grid-layout">
+                <section class = "grid-layout">
                     <a id="speedrunning" class = "photo-link" href = "https://www.youtube.com/watch?v=wY8HXdFT6kI">
                     <div class = "overcard">
                         <h5>Speedrunning</h5>
@@ -75,7 +83,7 @@
                     </a>
                 </section>
 
-                <section  class ="grid-layout">
+                <section class ="grid-layout">
                     <a id="representation" class = "photo-link" href = "https://www.ign.com/articles/2011/07/20/what-metroid-did-for-women-in-gaming">
                     <div class = "overcard">
                         <h5>Representation</h5>
@@ -98,6 +106,7 @@
         </div>    
     </article>
 
+    <!-- footer section containing the h3 for contact me and the div class for content. This div contains a footer list with clickable links contained within -->
     <footer>
         <h3 id = "contact-me-header">Contact Me</h3>
         <div class = "content">

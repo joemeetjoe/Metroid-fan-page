@@ -17,6 +17,12 @@ N/A
 
 If you would like to use this project, please click on the link below: 
 
+https://joemeetjoe.github.io/Metroid-fan-page/
+
+![Screenshot Capture - 2022-12-20 - 20-31-36](https://user-images.githubusercontent.com/119348225/208799602-405fc024-64da-4f73-bdce-dc5b0cb55da8.png)
+![Screenshot Capture - 2022-12-20 - 20-31-54](https://user-images.githubusercontent.com/119348225/208799612-0a4779ed-ecc3-4954-aefc-965b9938d89d.png)
+
+
 ## License
 
 There is no license on this repository. 
